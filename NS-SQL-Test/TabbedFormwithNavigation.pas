@@ -15,7 +15,7 @@ uses
   Data.Bind.Grid, Data.Bind.DBScope, FireDAC.Comp.UI, Data.DB,
   FireDAC.Comp.DataSet, FireDAC.Comp.Client, FMX.TMSBaseControl,
   FMX.TMSGridCell, FMX.TMSGridOptions, FMX.TMSGridData, FMX.TMSCustomGrid,
-  FMX.TMSGrid;
+  FMX.TMSGrid, FMX.TMSLiveGridDataBinding, FMX.TMSLiveGrid;
 
 type
   TTabbedwithNavigationForm = class(TForm)
@@ -43,12 +43,12 @@ type
     ActionList1: TActionList;
     NextTabAction1: TNextTabAction;
     PreviousTabAction1: TPreviousTabAction;
-    TMSFMXGrid1: TTMSFMXGrid;
     PafConnection: TFDConnection;
     FDQuery1: TFDQuery;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
+    TMSFMXLiveGrid1: TTMSFMXLiveGrid;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     procedure GestureDone(Sender: TObject; const EventInfo: TGestureEventInfo; var Handled: Boolean);
     procedure FormCreate(Sender: TObject);
@@ -70,6 +70,7 @@ procedure TTabbedwithNavigationForm.FormCreate(Sender: TObject);
 begin
   { This defines the default active tab at runtime }
   TabControl1.ActiveTab := TabItem1;
+  FDQuery1.Active:=TRUE;
 end;
 
 procedure TTabbedwithNavigationForm.FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);

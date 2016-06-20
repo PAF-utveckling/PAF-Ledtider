@@ -1,95 +1,95 @@
 ﻿[TabItem1]
-Coordinates=336,192,69,36
+Coordinates=336,192,59,33
 
 [TabControl1]
-Coordinates=241,192,85,36
+Coordinates=241,192,74,33
 
 [ToolBar3]
-Coordinates=164,192,67,36
+Coordinates=164,192,58,33
 
 [NextTabAction1]
-Coordinates=276,111,106,36
+Coordinates=276,111,92,33
 
 [lblTitle1]
-Coordinates=342,10,60,58
+Coordinates=342,10,53,51
 
 [ToolBar5]
-Coordinates=87,192,67,36
+Coordinates=87,192,58,33
 
 [lblTitle5]
-Coordinates=81,78,60,58
+Coordinates=81,78,53,51
 
 [PreviousTabAction1]
-Coordinates=420,1,130,36
+Coordinates=420,1,113,33
 
 [ToolBar4]
-Coordinates=10,192,67,36
+Coordinates=10,192,58,33
 
 [TabControl2]
-Coordinates=403,146,85,36
+Coordinates=403,146,74,33
 
 [TabItem3]
-Coordinates=324,146,69,36
+Coordinates=324,146,59,33
 
 [ToolBar1]
-Coordinates=247,146,67,36
+Coordinates=247,146,58,33
 
 [TabItem6]
-Coordinates=168,146,69,36
+Coordinates=168,146,59,33
 
 [btnBack]
-Coordinates=10,78,61,58
+Coordinates=10,78,54,51
 
 [TabItem5]
-Coordinates=89,146,69,36
+Coordinates=89,146,59,33
 
 [ActionList1]
-Coordinates=420,111,78,36
+Coordinates=420,111,70,33
 
 [GestureManager1]
-Coordinates=420,166,118,36
+Coordinates=420,166,101,33
 
 [btnNext]
-Coordinates=203,10,59,58
+Coordinates=203,10,52,51
 
 [TabItem4]
-Coordinates=10,146,69,36
+Coordinates=10,146,59,33
 
 [lblTitle4]
-Coordinates=272,10,60,58
+Coordinates=272,10,53,51
 
 [lblTitle3]
-Coordinates=151,78,60,58
+Coordinates=151,78,53,51
 
 [ToolBar2]
-Coordinates=370,78,67,36
+Coordinates=370,78,58,33
 
 [TabItem2]
-Coordinates=291,78,69,36
+Coordinates=291,78,59,33
 
 [lblTitle2]
-Coordinates=221,78,60,58
-
-[TMSFMXGrid1]
-Coordinates=920,80,100,58
-Visible=True
+Coordinates=221,78,53,51
 
 [FDGUIxWaitCursor1]
-Coordinates=588,133,132,36
+Coordinates=588,133,113,33
 
 [PafConnection]
-Coordinates=588,188,99,36
+Coordinates=588,188,87,33
 
 [FDQuery1]
-Coordinates=780,30,73,36
+Coordinates=863,40,63,33
 Visible=False
 
 []
-Coordinates=588,78,91,36
+Coordinates=0,0,137,58
+Visible=True
 
 [BindSourceDB1]
-Coordinates=670,20,152,1180
+Coordinates=863,40,127,969
 
 [BindingsList1]
-Coordinates=0,0,91,36
+Coordinates=72,1,82,33
+
+[TMSFMXLiveGrid1]
+Coordinates=580,40,105,51
 

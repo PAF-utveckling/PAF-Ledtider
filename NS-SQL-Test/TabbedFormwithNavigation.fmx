@@ -232,13 +232,12 @@ object TabbedwithNavigationForm: TTabbedwithNavigationForm
           Text = 'Title'
         end
       end
-      object TMSFMXGrid1: TTMSFMXGrid
-        Align = Bottom
+      object TMSFMXLiveGrid1: TTMSFMXLiveGrid
+        Align = Client
         DisableFocusEffect = False
-        Position.Y = 277.000000000000000000
         TabOrder = 1
         Size.Width = 405.000000000000000000
-        Size.Height = 270.000000000000000000
+        Size.Height = 499.000000000000000000
         Size.PlatformDefault = False
         ColumnCount = 51
         RowCount = 301
@@ -985,8 +984,8 @@ object TabbedwithNavigationForm: TTabbedwithNavigationForm
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
-    Left = 16
-    Top = 256
+    Left = 136
+    Top = 144
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = FDQuery1
@@ -1002,7 +1001,7 @@ object TabbedwithNavigationForm: TTabbedwithNavigationForm
     object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
-      GridControl = TMSFMXGrid1
+      GridControl = TMSFMXLiveGrid1
       Columns = <>
     end
   end
