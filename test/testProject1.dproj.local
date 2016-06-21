@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899-12-30 00:00:00.000.679,=C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.888,=C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.781,=C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.212,=C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016-06-20 10:01:17.045,=C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016-06-20 10:31:49.612,D:\Projekt\PAF Ledtider\test\testUnit1.fmx=C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2016-06-20 10:31:49.612,D:\Projekt\PAF Ledtider\test\testUnit1.pas=C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016-06-20 10:31:54.105,D:\Projekt\PAF Ledtider\test\testProject1.dproj=C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.781,=C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.612,C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Projekt\PAF Ledtider\test\testUnit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.045,=C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.105,C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Projekt\PAF Ledtider\test\testProject1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.612,C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Projekt\PAF Ledtider\test\testUnit1.fmx</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.888,=C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.679,=C:\Users\astri_000\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile iOSSimulator="iPhone5"/>
-	</ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>  <PNiklasMac iOSSimulator="iPhone5"/>
+  </ActiveMobileDevice>
 </BorlandProject>
