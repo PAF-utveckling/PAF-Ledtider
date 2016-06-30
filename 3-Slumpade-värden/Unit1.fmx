@@ -1,0 +1,535 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 573
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TabControl2: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 640.000000000000000000
+    Size.Height = 573.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      640s
+      573s
+      640s
+      573s)
+    object TabItem5: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem5'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ToolBar1: TToolBar
+        Size.Width = 640.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblTitle1: TLabel
+          Align = Contents
+          Size.Width = 640.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Title'
+        end
+        object btnNext: TSpeedButton
+          Action = NextTabAction1
+          Align = Right
+          Enabled = True
+          ImageIndex = -1
+          Margins.Right = 5.000000000000000000
+          Position.X = 575.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          Visible = True
+        end
+      end
+      object Button1: TButton
+        Position.X = 88.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Skapa slumpade v'#228'rden'
+        OnClick = Button1Click
+      end
+      object Grid: TTMSFMXGrid
+        DisableFocusEffect = False
+        Position.X = 8.000000000000000000
+        Position.Y = 104.000000000000000000
+        TabOrder = 2
+        Size.Width = 370.000000000000000000
+        Size.Height = 289.000000000000000000
+        Size.PlatformDefault = False
+        Options.Editing.CalcFormat = '%g'
+        Options.Grouping.CalcFormat = '%g'
+        Options.Grouping.GroupCountFormat = '(%d)'
+        Options.IO.XMLEncoding = 'ISO-8859-1'
+        Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+        Options.Printing.PageNumberFormat = '%g'
+        Version = '2.2.6.16'
+        Fill.Kind = Solid
+        Stroke.Kind = Solid
+        TopRow = 1
+        LeftCol = 1
+        Columns = <
+          item
+            Color = claNull
+            Editor = etEdit
+            Fixed = False
+            FixedFont.StyleExt = {00070000000000000004000000}
+            FixedFontColor = claBlack
+            FontColor = claBlack
+            ID = ''
+            Width = 68.000000000000000000
+          end
+          item
+            Color = claNull
+            Editor = etEdit
+            Fixed = False
+            FixedFont.StyleExt = {00070000000000000004000000}
+            FixedFontColor = claBlack
+            FontColor = claBlack
+            ID = ''
+            Width = 68.000000000000000000
+          end
+          item
+            Color = claNull
+            Editor = etEdit
+            Fixed = False
+            FixedFont.StyleExt = {00070000000000000004000000}
+            FixedFontColor = claBlack
+            FontColor = claBlack
+            ID = ''
+            Width = 68.000000000000000000
+          end
+          item
+            Color = claNull
+            Editor = etEdit
+            Fixed = False
+            FixedFont.StyleExt = {00070000000000000004000000}
+            FixedFontColor = claBlack
+            FontColor = claBlack
+            ID = ''
+            Width = 68.000000000000000000
+          end
+          item
+            Color = claNull
+            Editor = etEdit
+            Fixed = False
+            FixedFont.StyleExt = {00070000000000000004000000}
+            FixedFontColor = claBlack
+            FontColor = claBlack
+            ID = ''
+            Width = 68.000000000000000000
+          end>
+      end
+    end
+    object TabItem6: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem6'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ToolBar2: TToolBar
+        Size.Width = 640.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblTitle2: TLabel
+          Align = Contents
+          Size.Width = 640.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Title'
+        end
+        object btnBack: TSpeedButton
+          Action = PreviousTabAction1
+          Align = Left
+          Enabled = True
+          ImageIndex = -1
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 67.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          Visible = True
+        end
+      end
+      object Chart1: TTMSFMXChart
+        ClickMargin = 10.000000000000000000
+        FillOpacity = 1.000000000000000000
+        Legend.Fill.Kind = Solid
+        Legend.FillOpacity = 1.000000000000000000
+        Legend.Stroke.Kind = Solid
+        Legend.StrokeOpacity = 1.000000000000000000
+        Legend.StrokeThickness = 1.000000000000000000
+        Legend.Left = 10.000000000000000000
+        Legend.Top = 10.000000000000000000
+        StrokeOpacity = 1.000000000000000000
+        StrokeThickness = 1.000000000000000000
+        Series = <
+          item
+            AnimationFactor = 4.000000000000000000
+            AutoYRange = arDisabled
+            Bar.WidthType = bwtPixels
+            Bar.Width = 65.000000000000000000
+            Bar.Spacing = 200.000000000000000000
+            Pie.Size = 200.000000000000000000
+            Pie.SweepAngle = 360.000000000000000000
+            ChartType = ctBar
+            Fill.Color = claLightslategray
+            FillOpacity = 1.000000000000000000
+            LegendText = 'Serie 1'
+            Labels.FillOpacity = 1.000000000000000000
+            Labels.Format = '%.2f'
+            Labels.OffsetY = -10.000000000000000000
+            Labels.StrokeOpacity = 1.000000000000000000
+            Labels.StrokeThickness = 1.000000000000000000
+            Markers.Fill.Color = claLightslategray
+            Markers.FillOpacity = 1.000000000000000000
+            Markers.Height = 10.000000000000000000
+            Markers.Stroke.Color = claDarkslategray
+            Markers.StrokeOpacity = 1.000000000000000000
+            Markers.StrokeThickness = 1.000000000000000000
+            Markers.Visible = True
+            Markers.Width = 10.000000000000000000
+            MaxX = 10.000000000000000000
+            MaxY = 150.000000000000000000
+            MinY = 0.000000000000028422
+            Offset3DX = 15.000000000000000000
+            Offset3DY = 15.000000000000000000
+            Points = <
+              item
+                Annotations = <>
+                YValue = 82.000000000000000000
+                YValueSecond = 62.000000000000000000
+                YValueVariable = 82.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 1.000000000000000000
+                YValue = 57.000000000000000000
+                YValueSecond = 37.000000000000000000
+                YValueVariable = 57.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 2.000000000000000000
+                YValue = 37.000000000000000000
+                YValueSecond = 17.000000000000000000
+                YValueVariable = 37.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 3.000000000000000000
+                YValue = 117.000000000000000000
+                YValueSecond = 97.000000000000000000
+                YValueVariable = 117.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 4.000000000000000000
+                YValue = 65.000000000000000000
+                YValueSecond = 45.000000000000000000
+                YValueVariable = 65.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 5.000000000000000000
+                YValue = 87.000000000000000000
+                YValueSecond = 67.000000000000000000
+                YValueVariable = 87.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 6.000000000000000000
+                YValue = 56.000000000000000000
+                YValueSecond = 36.000000000000000000
+                YValueVariable = 56.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 7.000000000000000000
+                YValue = 104.000000000000000000
+                YValueSecond = 84.000000000000000000
+                YValueVariable = 104.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 8.000000000000000000
+                YValue = 8.000000000000000000
+                YValueSecond = -12.000000000000000000
+                YValueVariable = 8.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 9.000000000000000000
+                YValue = 109.000000000000000000
+                YValueSecond = 89.000000000000000000
+                YValueVariable = 109.000000000000000000
+              end>
+            Legend.FillOpacity = 1.000000000000000000
+            Legend.Left = -10.000000000000000000
+            Legend.StrokeOpacity = 1.000000000000000000
+            Legend.StrokeThickness = 1.000000000000000000
+            StrokeOpacity = 1.000000000000000000
+            Stroke.Color = claDarkslategray
+            StrokeThickness = 1.000000000000000000
+            XGrid.MajorUnitStrokeOpacity = 1.000000000000000000
+            XGrid.MajorUnitStrokeThickness = 1.000000000000000000
+            XGrid.MinorUnitStrokeOpacity = 1.000000000000000000
+            XGrid.MinorUnitStrokeThickness = 1.000000000000000000
+            XGrid.Visible = True
+            XValues.MajorUnit = 1.000000000000000000
+            XValues.MajorUnitFormat = '%.0f'
+            XValues.MajorUnitSpacing = 5.000000000000000000
+            XValues.MajorUnitTickMarkSize = 10.000000000000000000
+            XValues.MajorUnitTickMarkColor = claSilver
+            XValues.MinorUnitFormat = '%.0f'
+            XValues.MinorUnitSpacing = 5.000000000000000000
+            XValues.MinorUnitTickMarkSize = 7.000000000000000000
+            XValues.MinorUnitTickMarkColor = claSilver
+            XValues.SpiderAngle = 270.000000000000000000
+            YGrid.MajorUnitStrokeOpacity = 1.000000000000000000
+            YGrid.MajorUnitStrokeThickness = 1.000000000000000000
+            YGrid.MinorUnitStrokeOpacity = 1.000000000000000000
+            YGrid.MinorUnitStrokeThickness = 1.000000000000000000
+            YGrid.Visible = True
+            YValues.MajorUnit = 1.000000000000000000
+            YValues.MajorUnitFormat = '%.2f'
+            YValues.MajorUnitSpacing = 5.000000000000000000
+            YValues.MajorUnitTickMarkSize = 10.000000000000000000
+            YValues.MajorUnitTickMarkColor = claSilver
+            YValues.MinorUnitFormat = '%.2f'
+            YValues.MinorUnitSpacing = 5.000000000000000000
+            YValues.MinorUnitTickMarkSize = 7.000000000000000000
+            YValues.MinorUnitTickMarkColor = claSilver
+            YValues.SpiderAngle = 270.000000000000000000
+            YValues.Positions = []
+          end
+          item
+            AnimationFactor = 4.000000000000000000
+            AutoYRange = arDisabled
+            Bar.WidthType = bwtPixels
+            Bar.Width = 65.000000000000000000
+            Bar.Spacing = 200.000000000000000000
+            Pie.Size = 200.000000000000000000
+            Pie.SweepAngle = 360.000000000000000000
+            ChartType = ctBar
+            FillOpacity = 1.000000000000000000
+            LegendText = 'Serie 2'
+            Labels.FillOpacity = 1.000000000000000000
+            Labels.Format = '%.2f'
+            Labels.OffsetY = -10.000000000000000000
+            Labels.StrokeOpacity = 1.000000000000000000
+            Labels.StrokeThickness = 1.000000000000000000
+            Markers.FillOpacity = 1.000000000000000000
+            Markers.Height = 10.000000000000000000
+            Markers.StrokeOpacity = 1.000000000000000000
+            Markers.StrokeThickness = 1.000000000000000000
+            Markers.Width = 10.000000000000000000
+            MaxX = 10.000000000000000000
+            MaxY = 10.000000000000000000
+            Offset3DX = 15.000000000000000000
+            Offset3DY = 15.000000000000000000
+            Points = <
+              item
+                Annotations = <>
+                YValue = 85.000000000000000000
+                YValueSecond = 65.000000000000000000
+                YValueVariable = 85.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 1.000000000000000000
+                YValue = 15.000000000000000000
+                YValueSecond = -5.000000000000000000
+                YValueVariable = 15.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 2.000000000000000000
+                YValue = 6.000000000000000000
+                YValueSecond = -14.000000000000000000
+                YValueVariable = 6.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 3.000000000000000000
+                YValue = 67.000000000000000000
+                YValueSecond = 47.000000000000000000
+                YValueVariable = 67.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 4.000000000000000000
+                YValue = 38.000000000000000000
+                YValueSecond = 18.000000000000000000
+                YValueVariable = 38.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 5.000000000000000000
+                YValue = 45.000000000000000000
+                YValueSecond = 25.000000000000000000
+                YValueVariable = 45.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 6.000000000000000000
+                YValue = 89.000000000000000000
+                YValueSecond = 69.000000000000000000
+                YValueVariable = 89.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 7.000000000000000000
+                YValue = 65.000000000000000000
+                YValueSecond = 45.000000000000000000
+                YValueVariable = 65.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 8.000000000000000000
+                YValue = 85.000000000000000000
+                YValueSecond = 65.000000000000000000
+                YValueVariable = 85.000000000000000000
+              end
+              item
+                Annotations = <>
+                XValue = 9.000000000000000000
+                YValue = 94.000000000000000000
+                YValueSecond = 74.000000000000000000
+                YValueVariable = 94.000000000000000000
+              end>
+            Legend.FillOpacity = 1.000000000000000000
+            Legend.Left = -10.000000000000000000
+            Legend.StrokeOpacity = 1.000000000000000000
+            Legend.StrokeThickness = 1.000000000000000000
+            StrokeOpacity = 1.000000000000000000
+            StrokeThickness = 1.000000000000000000
+            XGrid.MajorUnitStrokeOpacity = 1.000000000000000000
+            XGrid.MajorUnitStrokeThickness = 1.000000000000000000
+            XGrid.MinorUnitStrokeOpacity = 1.000000000000000000
+            XGrid.MinorUnitStrokeThickness = 1.000000000000000000
+            XValues.MajorUnit = 1.000000000000000000
+            XValues.MajorUnitFormat = '%.0f'
+            XValues.MajorUnitSpacing = 5.000000000000000000
+            XValues.MajorUnitTickMarkSize = 10.000000000000000000
+            XValues.MajorUnitTickMarkColor = claSilver
+            XValues.MinorUnitFormat = '%.0f'
+            XValues.MinorUnitSpacing = 5.000000000000000000
+            XValues.MinorUnitTickMarkSize = 7.000000000000000000
+            XValues.MinorUnitTickMarkColor = claSilver
+            XValues.SpiderAngle = 270.000000000000000000
+            XValues.Positions = []
+            YGrid.MajorUnitStrokeOpacity = 1.000000000000000000
+            YGrid.MajorUnitStrokeThickness = 1.000000000000000000
+            YGrid.MinorUnitStrokeOpacity = 1.000000000000000000
+            YGrid.MinorUnitStrokeThickness = 1.000000000000000000
+            YValues.MajorUnit = 1.000000000000000000
+            YValues.MajorUnitFormat = '%.2f'
+            YValues.MajorUnitSpacing = 5.000000000000000000
+            YValues.MajorUnitTickMarkSize = 10.000000000000000000
+            YValues.MajorUnitTickMarkColor = claSilver
+            YValues.MinorUnitFormat = '%.2f'
+            YValues.MinorUnitSpacing = 5.000000000000000000
+            YValues.MinorUnitTickMarkSize = 7.000000000000000000
+            YValues.MinorUnitTickMarkColor = claSilver
+            YValues.SpiderAngle = 270.000000000000000000
+            YValues.Positions = []
+          end>
+        Title.FillOpacity = 1.000000000000000000
+        Title.Stroke.Kind = Solid
+        Title.StrokeOpacity = 1.000000000000000000
+        Title.StrokeThickness = 1.000000000000000000
+        Title.Height = 35.000000000000000000
+        Title.Text = 'TMS FMX Chart'
+        Version = '1.6.0.0'
+        XAxis.FillOpacity = 1.000000000000000000
+        XAxis.Stroke.Kind = Solid
+        XAxis.StrokeOpacity = 1.000000000000000000
+        XAxis.StrokeThickness = 1.000000000000000000
+        XAxis.Height = 35.000000000000000000
+        YAxis.FillOpacity = 1.000000000000000000
+        YAxis.Stroke.Kind = Solid
+        YAxis.StrokeOpacity = 1.000000000000000000
+        YAxis.StrokeThickness = 1.000000000000000000
+        YAxis.Positions = []
+        YAxis.Width = 35.000000000000000000
+        ClipChildren = True
+        DisableFocusEffect = False
+        Enabled = False
+        Position.Y = 72.000000000000000000
+        TabOrder = 1
+        Size.Width = 478.000000000000000000
+        Size.Height = 350.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Button2: TButton
+        Position.X = 240.000000000000000000
+        Position.Y = 472.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 46.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Ta in v'#228'rdena fr'#229'n griden'
+        OnClick = InsertToChart
+      end
+      object Button3: TButton
+        Position.X = 32.000000000000000000
+        Position.Y = 472.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Formatera grafen efter v'#228'rdena'
+        OnClick = Button3Click
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 504
+    Top = 8
+    object PreviousTabAction1: TPreviousTabAction
+      Category = 'Tab'
+      TabControl = TabControl2
+    end
+    object NextTabAction1: TNextTabAction
+      Category = 'Tab'
+      TabControl = TabControl2
+    end
+  end
+end
