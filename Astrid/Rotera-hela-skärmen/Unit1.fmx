@@ -1,0 +1,349 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 381
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 280.000000000000000000
+    Position.Y = 232.000000000000000000
+    TabOrder = 0
+    Text = 'Button1'
+  end
+  object Chart: TTMSFMXChart
+    ClickMargin = 10.000000000000000000
+    FillOpacity = 1.000000000000000000
+    Legend.Fill.Kind = Solid
+    Legend.FillOpacity = 1.000000000000000000
+    Legend.Stroke.Kind = Solid
+    Legend.StrokeOpacity = 1.000000000000000000
+    Legend.StrokeThickness = 1.000000000000000000
+    Legend.Left = 10.000000000000000000
+    Legend.Top = 10.000000000000000000
+    StrokeOpacity = 1.000000000000000000
+    StrokeThickness = 1.000000000000000000
+    Series = <
+      item
+        AnimationFactor = 4.000000000000000000
+        AutoYRange = arDisabled
+        Bar.Width = 65.000000000000000000
+        Bar.Spacing = 20.000000000000000000
+        Pie.Size = 200.000000000000000000
+        Pie.SweepAngle = 360.000000000000000000
+        ChartType = ctStackedBar
+        Fill.Color = claLightslategray
+        FillOpacity = 1.000000000000000000
+        LegendText = 'Serie 1'
+        Labels.FillOpacity = 1.000000000000000000
+        Labels.Format = '%.2f'
+        Labels.OffsetY = -10.000000000000000000
+        Labels.StrokeOpacity = 1.000000000000000000
+        Labels.StrokeThickness = 1.000000000000000000
+        Markers.Fill.Color = claLightslategray
+        Markers.FillOpacity = 1.000000000000000000
+        Markers.Height = 10.000000000000000000
+        Markers.Stroke.Color = claDarkslategray
+        Markers.StrokeOpacity = 1.000000000000000000
+        Markers.StrokeThickness = 1.000000000000000000
+        Markers.Width = 10.000000000000000000
+        MaxX = 10.000000000000000000
+        MaxY = 150.000000000000000000
+        MinY = -0.000000000000028422
+        Offset3DX = 15.000000000000000000
+        Offset3DY = 15.000000000000000000
+        Points = <
+          item
+            Annotations = <>
+            YValue = 25.000000000000000000
+            YValueSecond = 5.000000000000000000
+            YValueVariable = 25.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 1.000000000000000000
+            YValue = 123.000000000000000000
+            YValueSecond = 103.000000000000000000
+            YValueVariable = 123.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 2.000000000000000000
+            YValue = 32.000000000000000000
+            YValueSecond = 12.000000000000000000
+            YValueVariable = 32.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 3.000000000000000000
+            YValue = 101.000000000000000000
+            YValueSecond = 81.000000000000000000
+            YValueVariable = 101.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 4.000000000000000000
+            YValue = 129.000000000000000000
+            YValueSecond = 109.000000000000000000
+            YValueVariable = 129.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 5.000000000000000000
+            YValue = 73.000000000000000000
+            YValueSecond = 53.000000000000000000
+            YValueVariable = 73.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 6.000000000000000000
+            YValue = 105.000000000000000000
+            YValueSecond = 85.000000000000000000
+            YValueVariable = 105.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 7.000000000000000000
+            YValue = 122.000000000000000000
+            YValueSecond = 102.000000000000000000
+            YValueVariable = 122.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 8.000000000000000000
+            YValue = 94.000000000000000000
+            YValueSecond = 74.000000000000000000
+            YValueVariable = 94.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 9.000000000000000000
+            YValue = 95.000000000000000000
+            YValueSecond = 75.000000000000000000
+            YValueVariable = 95.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 10.000000000000000000
+            YValue = 43.000000000000000000
+            YValueSecond = 23.000000000000000000
+            YValueVariable = 43.000000000000000000
+          end>
+        Legend.FillOpacity = 1.000000000000000000
+        Legend.Left = -10.000000000000000000
+        Legend.StrokeOpacity = 1.000000000000000000
+        Legend.StrokeThickness = 1.000000000000000000
+        ShowInLegend = False
+        StrokeOpacity = 1.000000000000000000
+        Stroke.Color = claDarkslategray
+        StrokeThickness = 1.000000000000000000
+        XGrid.MajorUnitStrokeOpacity = 1.000000000000000000
+        XGrid.MajorUnitStrokeThickness = 1.000000000000000000
+        XGrid.MinorUnitStrokeOpacity = 1.000000000000000000
+        XGrid.MinorUnitStrokeThickness = 1.000000000000000000
+        XGrid.Visible = True
+        XValues.MajorUnit = 1.000000000000000000
+        XValues.MajorUnitFormat = '%.0f'
+        XValues.MajorUnitSpacing = 5.000000000000000000
+        XValues.MajorUnitTickMarkSize = 10.000000000000000000
+        XValues.MajorUnitTickMarkColor = claSilver
+        XValues.MinorUnitFormat = '%.0f'
+        XValues.MinorUnitSpacing = 5.000000000000000000
+        XValues.MinorUnitTickMarkSize = 7.000000000000000000
+        XValues.MinorUnitTickMarkColor = claSilver
+        XValues.SpiderAngle = 270.000000000000000000
+        XValues.Angle = -90.000000000000000000
+        YGrid.MajorUnitStrokeOpacity = 1.000000000000000000
+        YGrid.MajorUnitStrokeThickness = 1.000000000000000000
+        YGrid.MinorUnitStrokeOpacity = 1.000000000000000000
+        YGrid.MinorUnitStrokeThickness = 1.000000000000000000
+        YGrid.Visible = True
+        YValues.MajorUnit = 1.000000000000000000
+        YValues.MajorUnitFormat = '%.2f'
+        YValues.MajorUnitSpacing = 5.000000000000000000
+        YValues.MajorUnitTickMarkSize = 10.000000000000000000
+        YValues.MajorUnitTickMarkColor = claSilver
+        YValues.MinorUnitFormat = '%.2f'
+        YValues.MinorUnitSpacing = 5.000000000000000000
+        YValues.MinorUnitTickMarkSize = 7.000000000000000000
+        YValues.MinorUnitTickMarkColor = claSilver
+        YValues.Title.Text = 'Y-Axis Serie 1'
+        YValues.SpiderAngle = 270.000000000000000000
+      end
+      item
+        AnimationFactor = 4.000000000000000000
+        AutoYRange = arDisabled
+        Bar.Width = 65.000000000000000000
+        Bar.Spacing = 20.000000000000000000
+        Pie.Size = 200.000000000000000000
+        Pie.SweepAngle = 360.000000000000000000
+        ChartType = ctStackedBar
+        Fill.Color = claLightseagreen
+        FillOpacity = 1.000000000000000000
+        LegendText = 'Serie 2'
+        Labels.FillOpacity = 1.000000000000000000
+        Labels.Format = '%.2f'
+        Labels.OffsetY = -10.000000000000000000
+        Labels.StrokeOpacity = 1.000000000000000000
+        Labels.StrokeThickness = 1.000000000000000000
+        Markers.Fill.Color = claLightseagreen
+        Markers.FillOpacity = 1.000000000000000000
+        Markers.Height = 10.000000000000000000
+        Markers.StrokeOpacity = 1.000000000000000000
+        Markers.StrokeThickness = 1.000000000000000000
+        Markers.Width = 10.000000000000000000
+        MaxX = 10.000000000000000000
+        MaxY = 150.000000000000000000
+        MinY = -0.000000000000028422
+        Offset3DX = 15.000000000000000000
+        Offset3DY = 15.000000000000000000
+        Points = <
+          item
+            Annotations = <>
+            YValue = 129.000000000000000000
+            YValueSecond = 109.000000000000000000
+            YValueVariable = 129.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 1.000000000000000000
+            YValue = 82.000000000000000000
+            YValueSecond = 62.000000000000000000
+            YValueVariable = 82.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 2.000000000000000000
+            YValue = 39.000000000000000000
+            YValueSecond = 19.000000000000000000
+            YValueVariable = 39.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 3.000000000000000000
+            YValue = 17.000000000000000000
+            YValueSecond = -3.000000000000000000
+            YValueVariable = 17.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 4.000000000000000000
+            YValue = 47.000000000000000000
+            YValueSecond = 27.000000000000000000
+            YValueVariable = 47.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 5.000000000000000000
+            YValue = 100.000000000000000000
+            YValueSecond = 80.000000000000000000
+            YValueVariable = 100.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 6.000000000000000000
+            YValue = 9.000000000000000000
+            YValueSecond = -11.000000000000000000
+            YValueVariable = 9.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 7.000000000000000000
+            YValue = 79.000000000000000000
+            YValueSecond = 59.000000000000000000
+            YValueVariable = 79.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 8.000000000000000000
+            YValue = 81.000000000000000000
+            YValueSecond = 61.000000000000000000
+            YValueVariable = 81.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 9.000000000000000000
+            YValue = 43.000000000000000000
+            YValueSecond = 23.000000000000000000
+            YValueVariable = 43.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 10.000000000000000000
+            YValue = 41.000000000000000000
+            YValueSecond = 21.000000000000000000
+            YValueVariable = 41.000000000000000000
+          end>
+        Legend.FillOpacity = 1.000000000000000000
+        Legend.Left = -10.000000000000000000
+        Legend.StrokeOpacity = 1.000000000000000000
+        Legend.StrokeThickness = 1.000000000000000000
+        ShowInLegend = False
+        StrokeOpacity = 1.000000000000000000
+        StrokeThickness = 1.000000000000000000
+        XGrid.MajorUnitStrokeOpacity = 1.000000000000000000
+        XGrid.MajorUnitStrokeThickness = 1.000000000000000000
+        XGrid.MinorUnitStrokeOpacity = 1.000000000000000000
+        XGrid.MinorUnitStrokeThickness = 1.000000000000000000
+        XValues.MajorUnit = 1.000000000000000000
+        XValues.MajorUnitFormat = '%.0f'
+        XValues.MajorUnitSpacing = 5.000000000000000000
+        XValues.MajorUnitTickMarkSize = 10.000000000000000000
+        XValues.MajorUnitTickMarkColor = claSilver
+        XValues.MinorUnitFormat = '%.0f'
+        XValues.MinorUnitSpacing = 5.000000000000000000
+        XValues.MinorUnitTickMarkSize = 7.000000000000000000
+        XValues.MinorUnitTickMarkColor = claSilver
+        XValues.Title.Text = 'X-Axis Serie 2'
+        XValues.SpiderAngle = 270.000000000000000000
+        XValues.Positions = []
+        YGrid.MajorUnitStrokeOpacity = 1.000000000000000000
+        YGrid.MajorUnitStrokeThickness = 1.000000000000000000
+        YGrid.MinorUnitStrokeOpacity = 1.000000000000000000
+        YGrid.MinorUnitStrokeThickness = 1.000000000000000000
+        YValues.MajorUnit = 1.000000000000000000
+        YValues.MajorUnitFormat = '%.2f'
+        YValues.MajorUnitSpacing = 5.000000000000000000
+        YValues.MajorUnitTickMarkSize = 10.000000000000000000
+        YValues.MajorUnitTickMarkColor = claSilver
+        YValues.MinorUnitFormat = '%.2f'
+        YValues.MinorUnitSpacing = 5.000000000000000000
+        YValues.MinorUnitTickMarkSize = 7.000000000000000000
+        YValues.MinorUnitTickMarkColor = claSilver
+        YValues.Title.Text = 'Y-Axis Serie 2'
+        YValues.SpiderAngle = 270.000000000000000000
+        YValues.Positions = []
+      end>
+    Title.FillOpacity = 1.000000000000000000
+    Title.Stroke.Kind = Solid
+    Title.StrokeOpacity = 1.000000000000000000
+    Title.StrokeThickness = 1.000000000000000000
+    Title.Visible = False
+    Title.Height = 35.000000000000000000
+    Title.Text = 'TMS FMX Chart'
+    Version = '1.6.0.0'
+    XAxis.FillOpacity = 1.000000000000000000
+    XAxis.Stroke.Kind = Solid
+    XAxis.StrokeOpacity = 1.000000000000000000
+    XAxis.StrokeThickness = 1.000000000000000000
+    XAxis.Height = 35.000000000000000000
+    YAxis.FillOpacity = 1.000000000000000000
+    YAxis.Stroke.Kind = Solid
+    YAxis.StrokeOpacity = 1.000000000000000000
+    YAxis.StrokeThickness = 1.000000000000000000
+    YAxis.Positions = []
+    YAxis.Width = 35.000000000000000000
+    ClipChildren = True
+    DisableFocusEffect = False
+    Position.X = 40.000000000000000000
+    Position.Y = 40.000000000000000000
+    TabOrder = 1
+    Size.Width = 550.000000000000000000
+    Size.Height = 318.000000000000000000
+    Size.PlatformDefault = False
+  end
+end
