@@ -40,7 +40,7 @@ begin
   Chart2.BeginUpdate;
   Chart.Series[0].MaxX := -0.5;
   Chart.Series[0].MinX := -15;
-  Chart2.Series[0].MaxY := (Chart.Series[0].MaxX+1-Chart.Series[0].MinX)/1.095; // Eftersom den automatiskt lägger till 9,5% till det värde man väljer
+  Chart2.Series[0].MaxY := -Chart.Series[0].MinX/1.095; // Eftersom den automatiskt lägger till 9,5% till det värde man väljer
   Chart2.Series[0].MinY := -Chart.Series[0].MaxX-1;
   Chart2.Height := Chart.Width;
   Chart.EndUpdate;
