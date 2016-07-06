@@ -31,9 +31,7 @@ implementation
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-  // Det ska gå från
   Unit1.From := StrToTime('00:00');
-  // Till
   Unit1.Till := StrToTime('11:00');
   FormatChart;
 end;
@@ -45,13 +43,8 @@ end;
 
 procedure TForm1.FormatChart;
 var
-  i, j, AxisWidth : Integer; Charts : Array[1..2] of TTMSFMXChart;
+  i, j, AxisWidth : Integer;
 begin
-  Charts[1] := Chart;
-  Charts[2] := Chart2;
-
-  //for j := 1 to 2 do Charts[j].Series[0].YValues.MajorUnit := StrToTime('01:00');
-
   with Chart.Series[0] do
   begin
     XValues.MajorUnit := StrToTime('01:00');
@@ -83,7 +76,6 @@ begin
   begin
     Height := Screen.Width-AxisWidth;
     Width := Screen.Height - Button1.Height;
-    //Position.X := (Screen.Width-Screen.Height+Button1.Height+AxisWidth)/2;
     Position.X := (Chart.Height-Chart.Width)/2+AxisWidth;
     Position.Y := (Chart.Width-Chart.Height)/2+Button1.Height
   end;
