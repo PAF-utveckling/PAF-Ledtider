@@ -2,4 +2,8 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
   ClientHeight = 695
   ClientWidth = 450
   DesignerMasterStyle = 3
+  inherited Chart: TTMSFMXChart
+    Position.Y = 278.000000000000000000
+    Size.Width = 450.000000000000000000
+  end
 end

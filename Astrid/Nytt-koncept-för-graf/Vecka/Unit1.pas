@@ -46,12 +46,13 @@ begin
   Chart.Position.X := 0;
   Chart.Position.Y := 0;
   Form1.FullScreen := True;
+  Form1.Height := Screen.Height;
   Button1.Position.Y := 0;
   Button1.Position.X := Form1.Width-Button1.Width;
   Button2.Position.Y := 0;
-  Button2.Position.X := Form1.Width-Button1.Width-Button2.Width;
+  Button2.Position.X := 0;
   Chart.Width := Form1.Width;
-  Chart.Height := Form1.Height;
+  Chart.Height := Screen.Height;
   GenerateValues;
 end;
 
