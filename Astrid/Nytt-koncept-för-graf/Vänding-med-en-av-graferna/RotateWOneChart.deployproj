@@ -13,9 +13,9 @@
     <ItemGroup Condition="'$(Platform)'=='Win64'"/>
     <ItemGroup Condition="'$(Platform)'=='iOSDevice32'"/>
     <ItemGroup Condition="'$(Platform)'=='Win32'">
-        <DeployFile Include="Win32\Debug\ChartDay.exe" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\</RemoteDir>
-            <RemoteName>ChartDay.exe</RemoteName>
+        <DeployFile Include="Win32\Debug\RotateWOneChart.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>RotateWOneChart\</RemoteDir>
+            <RemoteName>RotateWOneChart.exe</RemoteName>
             <DeployClass>ProjectOutput</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
@@ -26,7 +26,7 @@
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='OSX32'">
         <DeployFile Include="$(BDS)\Redist\osx32\libcgsqlite3.dylib">
-            <RemoteDir>ChartDay.app\Contents\MacOS\</RemoteDir>
+            <RemoteDir>RotateWOneChart.app\Contents\MacOS\</RemoteDir>
             <RemoteName>libcgsqlite3.dylib</RemoteName>
             <DeployClass>DependencyModule</DeployClass>
             <Operation>1</Operation>
@@ -35,7 +35,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
-            <RemoteDir>ChartDay.app\Contents\MacOS\</RemoteDir>
+            <RemoteDir>RotateWOneChart.app\Contents\MacOS\</RemoteDir>
             <RemoteName>libcgunwind.1.0.dylib</RemoteName>
             <DeployClass>DependencyModule</DeployClass>
             <Operation>1</Operation>
@@ -46,7 +46,7 @@
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='Android'">
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_36x36.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\res\drawable-ldpi\</RemoteDir>
+            <RemoteDir>RotateWOneChart\res\drawable-ldpi\</RemoteDir>
             <RemoteName>ic_launcher.png</RemoteName>
             <DeployClass>Android_LauncherIcon36</DeployClass>
             <Operation>1</Operation>
@@ -55,7 +55,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="Android\Debug\AndroidManifest.xml" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\</RemoteDir>
+            <RemoteDir>RotateWOneChart\</RemoteDir>
             <RemoteName>AndroidManifest.xml</RemoteName>
             <DeployClass>ProjectAndroidManifest</DeployClass>
             <Operation>1</Operation>
@@ -64,25 +64,35 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\library\lib\armeabi\</RemoteDir>
-            <RemoteName>libChartDay.so</RemoteName>
+            <RemoteDir>RotateWOneChart\library\lib\armeabi\</RemoteDir>
+            <RemoteName>libRotatewChart.so</RemoteName>
             <DeployClass>AndroidLibnativeArmeabiFile</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_640x480.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\res\drawable-large\</RemoteDir>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_470x320.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>RotateWOneChart\res\drawable-normal\</RemoteDir>
             <RemoteName>splash_image.png</RemoteName>
-            <DeployClass>Android_SplashImage640</DeployClass>
+            <DeployClass>Android_SplashImage470</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="Android\Debug\libRotateWOneChart.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>RotateWOneChart\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libRotateWOneChart.so</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_72x72.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\res\drawable-hdpi\</RemoteDir>
+            <RemoteDir>RotateWOneChart\res\drawable-hdpi\</RemoteDir>
             <RemoteName>ic_launcher.png</RemoteName>
             <DeployClass>Android_LauncherIcon72</DeployClass>
             <Operation>1</Operation>
@@ -91,7 +101,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_144x144.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\res\drawable-xxhdpi\</RemoteDir>
+            <RemoteDir>RotateWOneChart\res\drawable-xxhdpi\</RemoteDir>
             <RemoteName>ic_launcher.png</RemoteName>
             <DeployClass>Android_LauncherIcon144</DeployClass>
             <Operation>1</Operation>
@@ -100,7 +110,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_426x320.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\res\drawable-small\</RemoteDir>
+            <RemoteDir>RotateWOneChart\res\drawable-small\</RemoteDir>
             <RemoteName>splash_image.png</RemoteName>
             <DeployClass>Android_SplashImage426</DeployClass>
             <Operation>1</Operation>
@@ -108,17 +118,8 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_470x320.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\res\drawable-normal\</RemoteDir>
-            <RemoteName>splash_image.png</RemoteName>
-            <DeployClass>Android_SplashImage470</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_96x96.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\res\drawable-xhdpi\</RemoteDir>
+            <RemoteDir>RotateWOneChart\res\drawable-xhdpi\</RemoteDir>
             <RemoteName>ic_launcher.png</RemoteName>
             <DeployClass>Android_LauncherIcon96</DeployClass>
             <Operation>1</Operation>
@@ -126,8 +127,17 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_640x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>RotateWOneChart\res\drawable-large\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_960x720.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\res\drawable-xlarge\</RemoteDir>
+            <RemoteDir>RotateWOneChart\res\drawable-xlarge\</RemoteDir>
             <RemoteName>splash_image.png</RemoteName>
             <DeployClass>Android_SplashImage960</DeployClass>
             <Operation>1</Operation>
@@ -135,18 +145,8 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Android\Debug\libChartDay.so" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\library\lib\armeabi-v7a\</RemoteDir>
-            <RemoteName>libChartDay.so</RemoteName>
-            <DeployClass>ProjectOutput</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-            <Required>True</Required>
-        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_48x48.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\res\drawable-mdpi\</RemoteDir>
+            <RemoteDir>RotateWOneChart\res\drawable-mdpi\</RemoteDir>
             <RemoteName>ic_launcher.png</RemoteName>
             <DeployClass>Android_LauncherIcon48</DeployClass>
             <Operation>1</Operation>
@@ -155,8 +155,8 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="$(BDS)\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\library\lib\mips\</RemoteDir>
-            <RemoteName>libChartDay.so</RemoteName>
+            <RemoteDir>RotateWOneChart\library\lib\mips\</RemoteDir>
+            <RemoteName>libRotatewChart.so</RemoteName>
             <DeployClass>AndroidLibnativeMipsFile</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
@@ -164,7 +164,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\classes\</RemoteDir>
+            <RemoteDir>RotateWOneChart\classes\</RemoteDir>
             <RemoteName>classes.dex</RemoteName>
             <DeployClass>AndroidClassesDexFile</DeployClass>
             <Operation>1</Operation>
@@ -173,7 +173,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteDir>RotateWOneChart\library\lib\armeabi-v7a\</RemoteDir>
             <RemoteName>gdbserver</RemoteName>
             <DeployClass>AndroidGDBServer</DeployClass>
             <Operation>1</Operation>
@@ -182,7 +182,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="Android\Debug\splash_image_def.xml" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\res\drawable\</RemoteDir>
+            <RemoteDir>RotateWOneChart\res\drawable\</RemoteDir>
             <RemoteName>splash_image_def.xml</RemoteName>
             <DeployClass>AndroidSplashImageDef</DeployClass>
             <Operation>1</Operation>
@@ -191,7 +191,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="Android\Debug\styles.xml" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ChartDay\res\values\</RemoteDir>
+            <RemoteDir>RotateWOneChart\res\values\</RemoteDir>
             <RemoteName>styles.xml</RemoteName>
             <DeployClass>AndroidSplashStyles</DeployClass>
             <Operation>1</Operation>
@@ -202,7 +202,7 @@
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
         <DeployFile Include="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib">
-            <RemoteDir>ChartDay.app\</RemoteDir>
+            <RemoteDir>RotateWOneChart.app\</RemoteDir>
             <RemoteName>libcgunwind.1.0.dylib</RemoteName>
             <DeployClass>DependencyModule</DeployClass>
             <Operation>1</Operation>
@@ -211,7 +211,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="$(BDS)\Redist\iossimulator\libPCRE.dylib">
-            <RemoteDir>ChartDay.app\</RemoteDir>
+            <RemoteDir>RotateWOneChart.app\</RemoteDir>
             <RemoteName>libPCRE.dylib</RemoteName>
             <DeployClass>DependencyModule</DeployClass>
             <Operation>1</Operation>
