@@ -5,13 +5,14 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.TMSChart,
-  FMX.Controls.Presentation, FMX.Platform, FMX.StdCtrls;
+  FMX.Controls.Presentation, FMX.Platform, FMX.StdCtrls, FMX.TMSToolBar;
 
 type
   TForm1 = class(TForm)
     Chart: TTMSFMXChart;
     Button1: TButton;
     Button2: TButton;
+    TMSFMXToolBar1: TTMSFMXToolBar;
     procedure FormCreate(Sender: TObject);
     procedure GenerateValues;
     procedure Button1Click(Sender: TObject);
@@ -56,6 +57,7 @@ begin
   try
     Unit1.count := 10;
 
+    // Justera X axeln så att deb visar hela timmar
     for i := 0 to 1 do
     begin
       with Chart.Series[i] do
@@ -65,53 +67,58 @@ begin
         MaxY := StrToTime('5:00');
       end;
     end;
-    Form1.FullScreen := True;
-    Chart.Width := Screen.Width;
-    Chart.Height := Screen.Height;
-    Chart.Position.X := 0;
-    Chart.Position.Y := 0;
-    Button2.Position.X := Form1.Height-Button2.Width;
-    Button2.Position.Y := 0;
-    Button1.Position.X := 0;
-    Button1.Position.Y := 0;
+    //Form1.FullScreen := True;
+    //Chart.Width := Screen.Width;
+    //Chart.Height := Screen.Height;
+    //Chart.Position.X := 0;
+    //Chart.Position.Y := 0;
+    Button2.Position.X := Form1.Height-Button2.Width + 2;
+    Button2.Position.Y := 2;
+    Button1.Position.X := 2;
+    Button1.Position.Y := 2;
     GenerateValues;
-    Chart.Title.Text := DateToStr(Now);
+    Chart.Title.Text := 'DVT ledtider: ' + DateToStr(Now);
   except
-    ShowMessage('FormCreate');
+    ShowMessage('FormCreate error');
   end;
 end;
 
 procedure TForm1.FormResize(Sender: TObject);
 begin
+  Chart.BeginUpdate;
   try
     Button2.Position.X := Form1.Width-Button2.Width;
     Button2.Position.Y := 0;
-    Chart.Width := Screen.Width;
-    Chart.Height := Screen.Height;
-    if Screen.Width<Screen.Height then Chart.Visible := False
-    else Chart.Visible := True;
+    //Chart.Width := Screen.Width;
+    //Chart.Height := Screen.Height;
+    //if Screen.Width<Screen.Height then Chart.Visible := False
+    //else Chart.Visible := True;
   except
     ShowMessage('FormResize');
   end;
+  Chart.EndUpdate;
 end;
 
 procedure TForm1.GenerateValues;
 var
   i, j, a : Integer; hour, min : String; MaxTime, MinTime : TTime;
 begin
-  a := 0;
-  try
+  Chart.BeginUpdate;
+  //try
     for j := 0 to 1 do
     begin
       try
-        for i := a to Unit1.count do Chart.Series[j].Points[i div 16].Destroy;
+        //for i := a to Unit1.count do Chart.Series[j].Points[i div 16].Destroy;
+        for i := 0 to Unit1.count-1 do Chart.Series[j].Points[i].Free;
+        //Chart.Clear;
+
       except
         ShowMessage('Serie '+IntToStr(j)+', punkt '+IntToStr(i));
+        ShowMessage('1')
       end;
     end;
-  except
-    ShowMessage('1');
-  end;
+  //except
+
 
   try
     MaxTime := StrToTime('0:00');
@@ -172,7 +179,7 @@ begin
   except
     ShowMessage('4');
   end;
-
+  Chart.EndUpdate;
 end;
 
 end.

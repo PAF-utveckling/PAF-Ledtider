@@ -348,18 +348,35 @@ object Form1: TForm1
     YAxis.StrokeOpacity = 1.000000000000000000
     YAxis.StrokeThickness = 1.000000000000000000
     YAxis.Width = 35.000000000000000000
+    Align = Client
     ClipChildren = True
     DisableFocusEffect = False
-    Position.X = 48.000000000000000000
-    Position.Y = 24.000000000000000000
     TabOrder = 0
-    Size.Width = 550.000000000000000000
-    Size.Height = 350.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 369.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object TMSFMXToolBar1: TTMSFMXToolBar
+    Version = '1.0.1.2'
+    Appearance.Fill.Gradient.Points = <
+      item
+        Color = claWhite
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFFE6E6E6
+        Offset = 1.000000000000000000
+      end>
+    Align = Top
+    DisableFocusEffect = False
+    TabOrder = 3
+    Size.Width = 640.000000000000000000
+    Size.Height = 30.000000000000000000
     Size.PlatformDefault = False
   end
   object Button1: TButton
-    Position.X = 400.000000000000000000
-    Position.Y = 8.000000000000000000
+    Position.X = 64.000000000000000000
+    Position.Y = 32.000000000000000000
     Size.Width = 105.000000000000000000
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
