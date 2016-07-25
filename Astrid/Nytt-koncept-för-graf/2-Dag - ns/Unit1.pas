@@ -31,6 +31,7 @@ var
 implementation
 
 {$R *.fmx}
+{$R *.LgXhdpiPh.fmx ANDROID}
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
@@ -104,21 +105,13 @@ var
   i, j, a : Integer; hour, min : String; MaxTime, MinTime : TTime;
 begin
   Chart.BeginUpdate;
-  //try
-    for j := 0 to 1 do
-    begin
-      try
-        //for i := a to Unit1.count do Chart.Series[j].Points[i div 16].Destroy;
-        for i := 0 to Unit1.count-1 do Chart.Series[j].Points[i].Free;
-        //Chart.Clear;
 
-      except
-        ShowMessage('Serie '+IntToStr(j)+', punkt '+IntToStr(i));
-        ShowMessage('1')
-      end;
-    end;
-  //except
-
+  // Här en mer generell hantering av rensning av diagrammen
+  // Det som är bra med det är att den fungerar oavsett hur många serier
+  // det finns 0 - n.
+  // 2016-07-25 /NS
+  for j := 0 to Chart.series.Count - 1 do
+        Chart.Series[I].Points.Clear;
 
   try
     MaxTime := StrToTime('0:00');
