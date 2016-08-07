@@ -1,0 +1,12 @@
+inherited Form1_SmXhdpiPh: TForm1_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  DesignerMasterStyle = 3
+  inherited Chart: TTMSFMXChart
+    Size.Width = 250.000000000000000000
+    Size.Height = 345.000000000000000000
+  end
+  inherited TMSFMXToolBar1: TTMSFMXToolBar
+    Size.Width = 250.000000000000000000
+  end
+end

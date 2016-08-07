@@ -3,10 +3,325 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
   ClientWidth = 450
   DesignerMasterStyle = 3
   inherited Chart: TTMSFMXChart
+    Series = <
+      item
+        AnimationFactor = 4.000000000000000000
+        AutoYRange = arDisabled
+        Bar.WidthType = bwtPixels
+        Bar.Width = 15.000000000000000000
+        Bar.Spacing = 20.000000000000000000
+        Pie.Size = 200.000000000000000000
+        Pie.SweepAngle = 360.000000000000000000
+        ChartType = ctStackedBar
+        Fill.Color = claLightslategray
+        FillOpacity = 1.000000000000000000
+        LegendText = 'Serie 1'
+        Labels.FillOpacity = 1.000000000000000000
+        Labels.Format = '%.2f'
+        Labels.OffsetY = -10.000000000000000000
+        Labels.StrokeOpacity = 1.000000000000000000
+        Labels.StrokeThickness = 1.000000000000000000
+        Markers.Fill.Color = claLightslategray
+        Markers.FillOpacity = 1.000000000000000000
+        Markers.Height = 10.000000000000000000
+        Markers.Stroke.Color = claDarkslategray
+        Markers.StrokeOpacity = 1.000000000000000000
+        Markers.StrokeThickness = 1.000000000000000000
+        Markers.Width = 10.000000000000000000
+        MaxX = 10.000000000000000000
+        MaxY = 117.889396811238700000
+        MinY = -32.110603188761270000
+        Mode = smStatistical
+        Offset3DX = 15.000000000000000000
+        Offset3DY = 15.000000000000000000
+        Points = <
+          item
+            Annotations = <>
+            YValue = 97.000000000000000000
+            YValueSecond = 77.000000000000000000
+            YValueVariable = 97.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 1.000000000000000000
+            YValue = 122.000000000000000000
+            YValueSecond = 102.000000000000000000
+            YValueVariable = 122.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 2.000000000000000000
+            YValue = 96.000000000000000000
+            YValueSecond = 76.000000000000000000
+            YValueVariable = 96.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 3.000000000000000000
+            YValue = 78.000000000000000000
+            YValueSecond = 58.000000000000000000
+            YValueVariable = 78.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 4.000000000000000000
+            YValue = 76.000000000000000000
+            YValueSecond = 56.000000000000000000
+            YValueVariable = 76.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 5.000000000000000000
+            YValue = 66.000000000000000000
+            YValueSecond = 46.000000000000000000
+            YValueVariable = 66.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 6.000000000000000000
+            YValue = 128.000000000000000000
+            YValueSecond = 108.000000000000000000
+            YValueVariable = 128.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 7.000000000000000000
+            YValue = 56.000000000000000000
+            YValueSecond = 36.000000000000000000
+            YValueVariable = 56.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 8.000000000000000000
+            YValue = 110.000000000000000000
+            YValueSecond = 90.000000000000000000
+            YValueVariable = 110.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 9.000000000000000000
+            YValue = 54.000000000000000000
+            YValueSecond = 34.000000000000000000
+            YValueVariable = 54.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 10.000000000000000000
+            YValue = 102.000000000000000000
+            YValueSecond = 82.000000000000000000
+            YValueVariable = 102.000000000000000000
+          end>
+        Legend.FillOpacity = 1.000000000000000000
+        Legend.Left = -10.000000000000000000
+        Legend.StrokeOpacity = 1.000000000000000000
+        Legend.StrokeThickness = 1.000000000000000000
+        ShowInLegend = False
+        StrokeOpacity = 1.000000000000000000
+        Stroke.Color = claBlack
+        StrokeThickness = 1.000000000000000000
+        XGrid.MajorUnitStrokeOpacity = 1.000000000000000000
+        XGrid.MajorUnitStrokeThickness = 1.000000000000000000
+        XGrid.MinorUnitStrokeOpacity = 1.000000000000000000
+        XGrid.MinorUnitStrokeThickness = 1.000000000000000000
+        XGrid.Visible = True
+        XValues.MajorUnit = 1.000000000000000000
+        XValues.MajorUnitFormat = 'hh:nn'
+        XValues.MajorUnitFormatType = vftDateTime
+        XValues.MajorUnitSpacing = 5.000000000000000000
+        XValues.MajorUnitTickMarkSize = 10.000000000000000000
+        XValues.MajorUnitTickMarkColor = claSilver
+        XValues.MinorUnitFormat = 'hh:nn'
+        XValues.MinorUnitFormatType = vftDateTime
+        XValues.MinorUnitSpacing = 5.000000000000000000
+        XValues.MinorUnitTickMarkSize = 7.000000000000000000
+        XValues.MinorUnitTickMarkColor = claSilver
+        XValues.Title.Text = 'Tidpunkt'
+        XValues.SpiderAngle = 270.000000000000000000
+        XValues.Angle = -90.000000000000000000
+        YGrid.MajorUnitStrokeOpacity = 1.000000000000000000
+        YGrid.MajorUnitStrokeThickness = 1.000000000000000000
+        YGrid.MinorUnitStrokeOpacity = 1.000000000000000000
+        YGrid.MinorUnitStrokeThickness = 1.000000000000000000
+        YGrid.Visible = True
+        YValues.AutoUnits = False
+        YValues.MajorUnit = 1.000000000000000000
+        YValues.MajorUnitFormat = 'hh:nn'
+        YValues.MajorUnitFormatType = vftDateTime
+        YValues.MajorUnitSpacing = 5.000000000000000000
+        YValues.MajorUnitTickMarkSize = 10.000000000000000000
+        YValues.MajorUnitTickMarkColor = claSilver
+        YValues.MinorUnitFormat = 'hh:nn'
+        YValues.MinorUnitFormatType = vftDateTime
+        YValues.MinorUnitSpacing = 5.000000000000000000
+        YValues.MinorUnitTickMarkSize = 7.000000000000000000
+        YValues.MinorUnitTickMarkColor = claSilver
+        YValues.Title.Text = 'Varaktighet (h)'
+        YValues.SpiderAngle = 270.000000000000000000
+      end
+      item
+        AnimationFactor = 4.000000000000000000
+        AutoYRange = arDisabled
+        Bar.WidthType = bwtPixels
+        Bar.Width = 15.000000000000000000
+        Bar.Spacing = 20.000000000000000000
+        Pie.Size = 200.000000000000000000
+        Pie.SweepAngle = 360.000000000000000000
+        ChartType = ctStackedBar
+        Fill.Color = claRed
+        FillOpacity = 1.000000000000000000
+        LegendText = 'Serie 2'
+        Labels.FillOpacity = 1.000000000000000000
+        Labels.Format = 'hh:nn'
+        Labels.FormatType = vftDateTime
+        Labels.OffsetY = -10.000000000000000000
+        Labels.StrokeOpacity = 1.000000000000000000
+        Labels.StrokeThickness = 1.000000000000000000
+        Labels.Visible = True
+        Labels.Mode = lmStacked
+        Markers.Fill.Color = claLightseagreen
+        Markers.FillOpacity = 1.000000000000000000
+        Markers.Height = 10.000000000000000000
+        Markers.StrokeOpacity = 1.000000000000000000
+        Markers.StrokeThickness = 1.000000000000000000
+        Markers.Width = 10.000000000000000000
+        MaxX = 10.000000000000000000
+        MaxY = 117.889396811238700000
+        MinY = -32.110603188761270000
+        Mode = smStatistical
+        Offset3DX = 15.000000000000000000
+        Offset3DY = 15.000000000000000000
+        Points = <
+          item
+            Annotations = <>
+            YValue = 36.000000000000000000
+            YValueSecond = 16.000000000000000000
+            YValueVariable = 36.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 1.000000000000000000
+            YValue = 53.000000000000000000
+            YValueSecond = 33.000000000000000000
+            YValueVariable = 53.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 2.000000000000000000
+            YValue = 125.000000000000000000
+            YValueSecond = 105.000000000000000000
+            YValueVariable = 125.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 3.000000000000000000
+            YValue = 58.000000000000000000
+            YValueSecond = 38.000000000000000000
+            YValueVariable = 58.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 4.000000000000000000
+            YValue = 34.000000000000000000
+            YValueSecond = 14.000000000000000000
+            YValueVariable = 34.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 5.000000000000000000
+            YValue = 67.000000000000000000
+            YValueSecond = 47.000000000000000000
+            YValueVariable = 67.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 6.000000000000000000
+            YValue = 71.000000000000000000
+            YValueSecond = 51.000000000000000000
+            YValueVariable = 71.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 7.000000000000000000
+            YValue = 14.000000000000000000
+            YValueSecond = -6.000000000000000000
+            YValueVariable = 14.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 8.000000000000000000
+            YValue = 51.000000000000000000
+            YValueSecond = 31.000000000000000000
+            YValueVariable = 51.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 9.000000000000000000
+            YValue = 5.000000000000000000
+            YValueSecond = -15.000000000000000000
+            YValueVariable = 5.000000000000000000
+          end
+          item
+            Annotations = <>
+            XValue = 10.000000000000000000
+            YValue = 52.000000000000000000
+            YValueSecond = 32.000000000000000000
+            YValueVariable = 52.000000000000000000
+          end>
+        Legend.FillOpacity = 1.000000000000000000
+        Legend.Left = -10.000000000000000000
+        Legend.StrokeOpacity = 1.000000000000000000
+        Legend.StrokeThickness = 1.000000000000000000
+        ShowInLegend = False
+        StrokeOpacity = 1.000000000000000000
+        Stroke.Color = claBlack
+        StrokeThickness = 1.000000000000000000
+        XGrid.MajorUnitStrokeOpacity = 1.000000000000000000
+        XGrid.MajorUnitStrokeThickness = 1.000000000000000000
+        XGrid.MinorUnitStrokeOpacity = 1.000000000000000000
+        XGrid.MinorUnitStrokeThickness = 1.000000000000000000
+        XValues.MajorUnit = 1.000000000000000000
+        XValues.MajorUnitFormat = 'hh:nn'
+        XValues.MajorUnitFormatType = vftDateTime
+        XValues.MajorUnitSpacing = 5.000000000000000000
+        XValues.MajorUnitTickMarkSize = 10.000000000000000000
+        XValues.MajorUnitTickMarkColor = claSilver
+        XValues.MinorUnitFormat = 'hh:nn'
+        XValues.MinorUnitFormatType = vftDateTime
+        XValues.MinorUnitSpacing = 5.000000000000000000
+        XValues.MinorUnitTickMarkSize = 7.000000000000000000
+        XValues.MinorUnitTickMarkColor = claSilver
+        XValues.Title.Text = 'X-Axis Serie 2'
+        XValues.SpiderAngle = 270.000000000000000000
+        XValues.Angle = -90.000000000000000000
+        XValues.Positions = []
+        YGrid.MajorUnitStrokeOpacity = 1.000000000000000000
+        YGrid.MajorUnitStrokeThickness = 1.000000000000000000
+        YGrid.MinorUnitStrokeOpacity = 1.000000000000000000
+        YGrid.MinorUnitStrokeThickness = 1.000000000000000000
+        YValues.AutoUnits = False
+        YValues.MajorUnit = 1.000000000000000000
+        YValues.MajorUnitFormat = 'hh:nn'
+        YValues.MajorUnitFormatType = vftDateTime
+        YValues.MajorUnitSpacing = 5.000000000000000000
+        YValues.MajorUnitTickMarkSize = 10.000000000000000000
+        YValues.MajorUnitTickMarkColor = claSilver
+        YValues.MinorUnitFormat = 'hh:nn'
+        YValues.MinorUnitFormatType = vftDateTime
+        YValues.MinorUnitSpacing = 5.000000000000000000
+        YValues.MinorUnitTickMarkSize = 7.000000000000000000
+        YValues.MinorUnitTickMarkColor = claSilver
+        YValues.Title.Text = 'Y-Axis Serie 2'
+        YValues.SpiderAngle = 270.000000000000000000
+        YValues.Positions = []
+      end>
     Size.Width = 450.000000000000000000
     Size.Height = 665.000000000000000000
   end
   inherited TMSFMXToolBar1: TTMSFMXToolBar
     Size.Width = 450.000000000000000000
+  end
+  inherited Button1: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 40.000000000000000000
   end
 end

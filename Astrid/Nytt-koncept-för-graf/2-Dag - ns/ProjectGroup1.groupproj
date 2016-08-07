@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D5810715-9542-41AA-98F9-F8E333153B28}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\..\..\..\..\..\..\Public\Documents\tmssoftware\TMSFMXChart Demos\Mobile\Demo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ChartDay.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Demo">
+        <MSBuild Projects="..\..\..\..\..\..\..\Public\Documents\tmssoftware\TMSFMXChart Demos\Mobile\Demo.dproj"/>
+    </Target>
+    <Target Name="Demo:Clean">
+        <MSBuild Projects="..\..\..\..\..\..\..\Public\Documents\tmssoftware\TMSFMXChart Demos\Mobile\Demo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Demo:Make">
+        <MSBuild Projects="..\..\..\..\..\..\..\Public\Documents\tmssoftware\TMSFMXChart Demos\Mobile\Demo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ChartDay">
+        <MSBuild Projects="ChartDay.dproj"/>
+    </Target>
+    <Target Name="ChartDay:Clean">
+        <MSBuild Projects="ChartDay.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ChartDay:Make">
+        <MSBuild Projects="ChartDay.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Demo;ChartDay"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Demo:Clean;ChartDay:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Demo:Make;ChartDay:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
