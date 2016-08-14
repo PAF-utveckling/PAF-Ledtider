@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{56A54CE8-30DB-42BB-9EA3-7B9A87B283F6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Graph\TabbedApplication.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Astrid\Nytt-koncept-för-graf\2-Dag - ns\ChartDay.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TabbedApplication">
+        <MSBuild Projects="Graph\TabbedApplication.dproj"/>
+    </Target>
+    <Target Name="TabbedApplication:Clean">
+        <MSBuild Projects="Graph\TabbedApplication.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TabbedApplication:Make">
+        <MSBuild Projects="Graph\TabbedApplication.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ChartDay">
+        <MSBuild Projects="..\Astrid\Nytt-koncept-för-graf\2-Dag - ns\ChartDay.dproj"/>
+    </Target>
+    <Target Name="ChartDay:Clean">
+        <MSBuild Projects="..\Astrid\Nytt-koncept-för-graf\2-Dag - ns\ChartDay.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ChartDay:Make">
+        <MSBuild Projects="..\Astrid\Nytt-koncept-för-graf\2-Dag - ns\ChartDay.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TabbedApplication;ChartDay"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TabbedApplication:Clean;ChartDay:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TabbedApplication:Make;ChartDay:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

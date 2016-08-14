@@ -26,6 +26,7 @@ type
     { Private declarations }
     // Antal serier.
     AntalSerier: Integer;
+    procedure SetUpGraph;
   public
     { Public declarations }
   end;
@@ -40,6 +41,7 @@ implementation
 {$R *.LgXhdpiPh.fmx ANDROID}
 {$R *.NmXhdpiPh.fmx ANDROID}
 {$R *.SmXhdpiPh.fmx ANDROID}
+{$R *.LgXhdpiTb.fmx ANDROID}
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
@@ -56,83 +58,6 @@ begin
   ClearValues;
 end;
 
-procedure TForm1.ClearValues;
-var j: Integer;
-begin
-    for j := 0 to Chart.series.Count - 1 do
-        Chart.Series[j].Points.Clear;
-end;
-
-procedure TForm1.FormCreate(Sender: TObject);
-var
-  i : Integer;
-begin
-  //Chart.Clear;
-
-  Chart.BeginUpdate;
-  //Chart.Clear;
-  Chart.Title.Text := 'DVT ledtider: ' + DateToStr(Now);
-  Chart.Title.Height := 30;
-  {$if compilerversion > 26}
-  Chart.Title.TextHorizontalAlignment := TTextAlign.Leading;
-  {$else}
-  Chart.Title.TextHorizontalAlignment := TTextAlign.taLeading;
-  {$endif}
-  Chart.Title.FontColor := claDarkslategray;
-  Chart.Title.Stroke.Color := claDarkslategray;
-  Chart.Title.Font.Size := 16;
-  Chart.Title.Font.Style := Chart.Title.Font.Style + [TFontStyle.fsBold];
-  Chart.Legend.Position := lpTopRight;
-  Chart.Legend.Left := -3;
-  Chart.Legend.Top := 3;
-  Chart.Legend.Font.Size := 10;
-  Chart.Legend.Visible := True;
-  Chart.Legend.FontColor := claDarkslategray;
-  Chart.Legend.Stroke.Color := claDarkslategray;
-  Chart.YAxis.Stroke.Color := claDarkslategray;
-  Chart.XAxis.Stroke.Color := claDarkslategray;
-  Chart.YAxis.Positions := [ypLeft];
-  Chart.XAxis.Positions := [xpBottom];
-  Chart.Stroke.Color := claDarkslategray;
-  Chart.Fill.Color := claWhite;
-
-  Chart.SeriesMargins.Left := 0;
-  Chart.SeriesMargins.Top := 0;
-  Chart.SeriesMargins.Right := 0;
-  Chart.SeriesMargins.Bottom := 0;
-
-
-  AntalSerier := 2;
-  Chart.Series.Clear;
-  for i:=0 to AntalSerier -1 do
-    Chart.Series.Add.ChartType:=ctStackedBar;;
-
-  // Justera X axeln så att deb visar hela timmar
-  for i := 0 to Chart.series.Count - 1 do
-  begin
-    with Chart.Series[i] do
-    begin
-
-      YValues.MajorUnit := StrToTime('1:00');
-      XValues.MajorUnit := StrToTime('1:00');
-      MaxY := StrToTime('5:00');
-    end;
-  end;
-  Button2.Position.X := Form1.Height-Button2.Width + 2;
-  Button2.Position.Y := 2;
-  Button1.Position.X := 2;
-  Button1.Position.Y := 2;
-  GenerateValues;
-  Chart.EndUpdate;
-end;
-
-procedure TForm1.FormResize(Sender: TObject);
-begin
-  Chart.BeginUpdate;
-  Button2.Position.X := Form1.Width-Button2.Width;
-  Button2.Position.Y := 2;
-end;
-
 procedure TForm1.GenerateValues;
 var
   AntPunkter, i, j, a : Integer; hour, min : String;
@@ -140,17 +65,7 @@ var
   Brush: TBrush;
 begin
   Chart.BeginUpdate;
-  Brush:=TBrush.Create(TBrushKind.Solid,TAlphaColorRec.darkblue);
-  //Chart.clear;
-  //Brush:=Tbrush.Create;
-  // Här en mer generell hantering av rensning av diagrammen
-  // Det som är bra med det är att den fungerar oavsett hur många serier
-  // det finns 0 - n. (Även om inge serie finns :) )
-  // 2016-07-25 /NS
-  //for j := 0 to Chart.series.Count - 1 do
-  //      Chart.Series[j].Points.Clear;
-  AntPunkter:= 10 + Random(5);
-  Chart.BeginUpdate;
+  //Brush:=TBrush.Create(TBrushKind.Solid,TAlphaColorRec.darkblue);
   MaxTime := StrToTime('0:00');
   MinTime := StrToTime('23:00');
   AntPunkter := Random(5)+10;
@@ -186,12 +101,62 @@ begin
 
   for i := 0 to 1 do
   begin
-    Chart.Series[i].MaxX := MaxTime + StrToTime('2:00');
+    Chart.Series[i].MaxX := MaxTime + StrToTime('2:00:00');
     Chart.Series[i].MinX := MinTime - StrToTime('2:00:00');
     //ShowMessage('4b');
   end;
   Chart.EndUpdate;
-  Brush.Destroy
+  //Brush.Destroy
 end;
+
+procedure TForm1.SetUpGraph;
+var
+  i: Integer;
+begin
+
+  Chart.BeginUpdate;
+  Chart.Title.Text := 'DVT ledtider: ' + DateToStr(Now);
+  Chart.Title.Height := 30;
+  // Justera X axeln så att den visar hela timmar
+  for i := 0 to Chart.series.Count - 1 do
+  begin
+    with Chart.Series[i] do
+    begin
+      YValues.MajorUnit := StrToTime('1:00');
+      XValues.MajorUnit := StrToTime('1:00');
+      MaxY := StrToTime('5:00');
+    end;
+  end;
+  (*
+  Button2.Position.X := Form1.Height - Button2.Width + 2;
+  Button2.Position.Y := 2;
+  Button1.Position.X := 2;
+  Button1.Position.Y := 2;
+  *)
+  Chart.EndUpdate;
+end;
+
+procedure TForm1.ClearValues;
+var j: Integer;
+begin
+    for j := 0 to Chart.series.Count - 1 do
+        Chart.Series[j].Points.Clear;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  ClearValues;
+  SetUpGraph;
+  GenerateValues;
+end;
+
+procedure TForm1.FormResize(Sender: TObject);
+begin
+  //Chart.BeginUpdate;
+  Button2.Position.X := Form1.Width-Button2.Width;
+  Button2.Position.Y := 2;
+end;
+
+
 
 end.

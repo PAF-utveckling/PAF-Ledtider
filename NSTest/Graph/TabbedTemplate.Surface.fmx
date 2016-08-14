@@ -1,0 +1,61 @@
+inherited TabbedForm_Surface: TTabbedForm_Surface
+  ClientHeight = 1920
+  ClientWidth = 1080
+  DesignerMasterStyle = 0
+  inherited HeaderToolBar: TToolBar
+    Size.Width = 1080.000000000000000000
+    inherited ToolBarLabel: TLabel
+      Size.Width = 1080.000000000000000000
+    end
+  end
+  inherited TabControl1: TTabControl
+    Size.Width = 1080.000000000000000000
+    Size.Height = 1872.000000000000000000
+    Sizes = (
+      1080s
+      1823s
+      1080s
+      1823s
+      1080s
+      1823s
+      1080s
+      1823s)
+    inherited TabItem1: TTabItem
+      Size.Width = 269.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited ChartDVT: TTMSFMXChart
+        Size.Width = 1080.000000000000000000
+        Size.Height = 1823.000000000000000000
+      end
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 269.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+    inherited TabItem3: TTabItem
+      Size.Width = 269.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+    inherited TabItem4: TTabItem
+      Size.Width = 271.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+  end
+  inherited GestureManager1: TGestureManager
+    GestureData = <
+      item
+        Control = Owner
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end>
+      end>
+  end
+end
