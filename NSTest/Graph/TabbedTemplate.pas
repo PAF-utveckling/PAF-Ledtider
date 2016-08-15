@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.TabControl,
   FMX.StdCtrls, FMX.Gestures, FMX.TMSChart, FMX.Controls.Presentation,
-  FMX.TMSButton, UIConsts;
+  FMX.TMSButton, UIConsts, FMX.TMSChartEditor;
 
 type
   TTabbedForm = class(TForm)
@@ -18,9 +18,10 @@ type
     TabItem3: TTabItem;
     TabItem4: TTabItem;
     GestureManager1: TGestureManager;
-    ChartDVT: TTMSFMXChart;
     ButtonClear: TTMSFMXButton;
     ButtonNya: TTMSFMXButton;
+    ChartDVT: TTMSFMXChart;
+    TMSFMXChartEditorDialog1: TTMSFMXChartEditorDialog;
     procedure FormCreate(Sender: TObject);
     procedure FormGesture(Sender: TObject; const EventInfo: TGestureEventInfo;
       var Handled: Boolean);
