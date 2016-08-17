@@ -65,13 +65,13 @@ begin
   for i := 0 to AntSerier - 1 do
   begin
     s[i] := ChartDVT.Series.Add;
+    //s[i].YScale.Parse('5:00');
+    s[i].YValues.MajorUnitFormatType := vftDateTime;
 
-    //s[i].YValues.MajorUnitFormatType := vftDateTime;
-
-    //s[i].XValues.MajorUnit := StrToTime('1:00');
+    s[i].XValues.MajorUnit := StrToTime('1:00');
     //s[i].MaxY := StrToTime('5:00');
   end;
-  //s[0].YValues.MajorUnitFormat := 'hhmm';
+  s[0].YValues.MajorUnitFormat := 'hhmm';
   //s[0].YValues.MajorUnit := 1; //StrToTime('1:00');
   //s[1].YScale := nil;
 
